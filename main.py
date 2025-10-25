@@ -18,7 +18,7 @@ if output_type in ("file", "all"):
         output_name = name_input
 
 # 탐색 루트 디렉터리 입력
-root_input = input("📂 탐색할 디렉터리를 쉼표로 구분해 입력하세요 (예: /,/usr) [기본값: PATH]: ").strip()
+root_input = input("📂 탐색할 디렉터리를 쉼표로 구분해 입력하세요 [기본값: PATH]: ").strip()
 root = root_input.split(",") if root_input else []
 include_all = input("실행 불가능한 파일도 포함하겠습니까?(y/n): ")
 if include_all in ["Yes","Y","y"]:
